@@ -14,18 +14,18 @@ let score = 0;
 
 // Getting high score from the local storage
 let highScore = localStorage.getItem("high-score") || 0;
-highScoreElement.innerText = `HIGH SCORE: ${highScore}`;
+highScoreElement.innerText = `High score: ${highScore}`;
 
 // Audio elements
 const backgroundMusic = new Audio();
-backgroundMusic.src = "https://github.com/NirNussbaum/Snake-Game/blob/main/Sounds/start_game_sound.wav";
+backgroundMusic.src = "https://github.com/gitsibi/Assignment-on-game-development-5-days-/blob/main/Sounds_start_game_sound.wav";
 backgroundMusic.loop = true;
 
 const eatSound = new Audio();
-eatSound.src = "https://github.com/NirNussbaum/Snake-Game/blob/main/Sounds/snake_eat_sound.wav";
+eatSound.src = "https://github.com/gitsibi/Assignment-on-game-development-5-days-/blob/main/Sounds_snake_eat_sound.wav";
 
 const gameOverSound = new Audio();
-gameOverSound.src = "https://github.com/NirNussbaum/Snake-Game/blob/main/Sounds/game_over_sound.mp3";
+gameOverSound.src = "https://github.com/gitsibi/Assignment-on-game-development-5-days-/blob/main/Sounds_game_over_sound.mp3";
 
 // Function to play background music
 const playBackgroundMusic = () => {
@@ -102,8 +102,8 @@ const initGame = () => {
         score++;
         highScore = score >= highScore ? score : highScore;
         localStorage.setItem("high-score", highScore);
-        scoreElement.innerText = `Score: ${score}`;
-        highScoreElement.innerText = `High Score: ${highScore}`;
+        scoreElement.innerText = `SCORE: ${score}`;
+        highScoreElement.innerText = `HIGH SCORE: ${highScore}`;
         playEatSound();
     }
     
