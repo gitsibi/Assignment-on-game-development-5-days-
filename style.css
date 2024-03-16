@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+body
+{
+    background-image: url("file:///C:/Users/admin/Pictures/snake1.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 30% auto; 
+    background-position-x: left ;
+    background-position: left; 
+    background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.details {
+  background-color: #000;
+  color: #fff;
+  padding: 50px;
+  border: 5px solid #ff0000;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #ff0000;
+  text-align: center;
+  font-size: 24px;
+  display: flex; /* Add flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.name-text,
+.nickname-text,
+.name-box,
+.nickname-box {
+  width: 100%; /* Make inputs full-width */
+  margin-bottom: 10px; /* Add some space between inputs */
+}
+
+
+.details label {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.details input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+    margin-bottom: 20px;
+}
+
+.details input[type="text"]:focus {
+    outline: none;
+    border-color: #00ff00;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+#submitBtn {
+  background-color: #ff5722;
+  color: white;
+  border: 2px solid #ff5722;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+#submitBtn:hover {
+  background-color: #ff7043;
+  border-color: #ff7043;
+  transform: scale(1.1);
+}
+
+h1
+{
+    color: rgb(90, 37, 192);
+    font-family: poppins;
+    font-size: 70px;
+    text-align: center;
+}
+
+.img
+{
+    height: 450px;
+    padding-left: 20%;
+}
+/* 
+.play
+{
+    font: Poppins;
+    height: 50px; 
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 40vh;  
+    float: right;
+    margin-top: 55vh;
+    margin-right: 30vh;
+    white-space: nowrap;
+}
+
+.text
+{
+    padding: 15px;
+    color:white;
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    font: Poppins;
+} */
+
+#play-button
+{
+    height: 8vh;
+    width: 8vh;
+    size: 50px;
+}
+
