@@ -34,17 +34,17 @@ body
   box-shadow: 0 0 20px #ff0000;
   text-align: center;
   font-size: 24px;
-  display: flex; /* Add flexbox */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .name-text,
 .nickname-text,
 .name-box,
 .nickname-box {
-  width: 100%; /* Make inputs full-width */
-  margin-bottom: 10px; /* Add some space between inputs */
+  width: 100%; 
+  margin-bottom: 10px; 
 }
 
 
@@ -98,29 +98,6 @@ h1
     height: 450px;
     padding-left: 20%;
 }
-/* 
-.play
-{
-    font: Poppins;
-    height: 50px; 
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    width: 40vh;  
-    float: right;
-    margin-top: 55vh;
-    margin-right: 30vh;
-    white-space: nowrap;
-}
-
-.text
-{
-    padding: 15px;
-    color:white;
-    font-size: 4vh;
-    margin-bottom: 2vh;
-    font: Poppins;
-} */
 
 #play-button
 {
