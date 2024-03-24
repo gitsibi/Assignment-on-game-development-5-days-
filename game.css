@@ -16,7 +16,7 @@ body
     background-position: right; 
     background-repeat: no-repeat;
 }
-.wrapper {
+.container {
   width: 200vmin;
   height: 100vmin;
   border-radius: 5px;
@@ -46,19 +46,17 @@ body
   grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 }
 .play-board .food {
-  /* background: #FF003D; */
   background: yellow;
 }
 .play-board .head {
   background: aqua;
-  /* background-color: indigo; */
 }
 
-.controls {
+/* .controlButton {
   display: none;
   justify-content: space-between;
 }
-.controls i {
+.controlButton i {
   padding: 25px 0;
   text-align: center;
   font-size: 1.3rem;
@@ -66,42 +64,41 @@ body
   width: calc(100% / 4);
   cursor: pointer;
   border-right: 1px solid #171B26;
-}
+} */
 
 
 
 #instruction-section {
-  background: lightcoral;  /* Light background color */
+  background: lightcoral; 
   background-image: url("https://i.pinimg.com/236x/c2/c7/52/c2c752259d7df48fc65ed967d654b7c1.jpg");
   background-size: 100% auto; 
   background-position-x: right ;
   background-position: right; 
   background-repeat: no-repeat;
   position: fixed;
-  top: 50%; /* Adjust top positioning as needed */
-  left: 50px; /* Adjust right positioning as needed */
+  top: 50%;
+  left: 50px; 
   transform: translateY(-50%);
-  width: 250px; /* Adjust width as needed */
-  background-color: lightcoral;  /* Light background color */
+  width: 250px; 
+  background-color: lightcoral;  
   padding: 20px;
-  border-radius: 15px; /* Rounded corners */
-  color: #333; /* Text color */
+  border-radius: 15px; 
+  color: #333; 
   font-size: 1rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-  border: 2px solid #ccc; /* Border */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+  border: 2px solid #ccc; 
 }
 
-/* Extreme style */
 #instruction-section h2 {
-  font-size: 1.5rem; /* Larger font size for heading */
-  color:black; /* Blue heading color */
-  margin-bottom: 10px; /* Bottom margin for spacing */
+  font-size: 1.5rem; 
+  color:black;
+  margin-bottom: 10px; 
   text-align: center;
   text-decoration: underline;
 }
 
 #instruction-section p {
-  line-height: 1.6; /* Increased line height */
+  line-height: 1.6; 
   color:black;
   font-weight: 900;
   text-align: center;
@@ -120,7 +117,7 @@ body
 
 
 @media screen and (max-width: 800px) {
-  .wrapper {
+  .container {
     width: 90vmin;
     height: 115vmin;
   }
@@ -128,10 +125,10 @@ body
     font-size: 1rem;
     padding: 15px 27px;
   }
-  .controls {
+  .controlButton {
     display: flex;
   }
-  .controls i {
+  .controlButton i {
     padding: 15px 0;
     font-size: 1rem;
   }
